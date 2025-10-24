@@ -27,11 +27,11 @@ except FileNotFoundError:
 try:
     with open(f"01_Beginner/module_2/practice_task/{new_file_name}", "w") as new_entry_file:
         new_entry_file.write(new_file_contents)
-except:
-    print("something went wrong")
+except FileNotFoundError:
+    print(f"the new file with file name {new_file_name} does not exist at run location")
 
 try:
     with open(f"01_Beginner/module_2/practice_task/{new_file_name}", "r") as recent_file:
         print(recent_file.read())
-except:
-    print("something went wrong")
+except FileNotFoundError:
+    print(f"the new file with file name {new_file_name} does not exist at run location")
