@@ -1,0 +1,30 @@
+
+23 lines of log_one.txt scanned
+--- report ---
+3 error entries found
+2025-08-11 00:06:01 [ERROR] Failed to connect to database: Connection timed out
+2025-08-11 00:16:07 [ERROR] RAID array rebuild failed on disk sda1
+2025-08-11 02:00:00 [ERROR] Failed to send email notification: SMTP server not responding
+1 critical entries found
+2025-08-11 00:15:20 [CRITICAL] Kernel panic: unexpected system halt
+
+24 lines of log_three.txt scanned
+--- report ---
+4 error entries found
+2025-08-13 09:05:10 [error] Failed to write to log file: permission denied
+2025-08-13 09:13:05 [error] Connectivity test failed: packet loss detected
+2025-08-13 09:20:45 [error] Failed to send alert email: SMTP authentication failed
+2025-08-13 09:30:00 [error] Failed to complete scheduled backup due to insufficient permissions
+2 critical entries found
+2025-08-13 09:12:00 [critical] Network interface down: immediate attention required
+2025-08-13 09:25:00 [critical] Kernel panic: unrecoverable failure detected
+
+23 lines of log_two.txt scanned
+--- report ---
+3 error entries found
+2025-08-12 08:02:10 [ERROR] Unable to mount external drive: Device busy
+2025-08-12 08:13:05 [ERROR] Backup failed: Network timeout
+2025-08-12 08:20:45 [ERROR] Email server unreachable: SMTP error 451
+2 critical entries found
+2025-08-12 08:12:00 [CRITICAL] Database corruption detected: immediate action required
+2025-08-12 08:25:00 [CRITICAL] Kernel panic: system halted unexpectedly
