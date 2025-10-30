@@ -1,7 +1,7 @@
 import unittest
 import os
 
-class TestCalculations(unittest.TestCase):
+class TestDiaryEntryFile(unittest.TestCase):
 
     def setUp(self):
         self.NAME= "Nemo"
