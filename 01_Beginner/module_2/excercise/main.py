@@ -3,10 +3,13 @@ Log Detective
 this script takes all text files from a directory and produces a report that summarises the 'critical' and 'error' entries from the files and saves the report in 'summary_report.txt'
 '''
 
-import glob, os
+import glob
+import os
 
-keywords = ["error", "critical"]
-report_file_path = "./report/report.txt"
+PROJECT_PATH = os.path.dirname(__file__)
+REPORT_FILE_PATH = os.path.join(PROJECT_PATH, "./report/report.txt")
+
+KEYWORDS = ["error", "critical"]
 
 def create_new_file(file_name):
     try:
@@ -24,7 +27,7 @@ def process_log_file(file_name):
     results = {"file_name": file_name,
                "line_count": 0,
                "keywords": {}}
-    for keyword in keywords:
+    for keyword in KEYWORDS:
         results["keywords"][keyword] = {}
         results["keywords"][keyword]["entry_count"] = 0
         results["keywords"][keyword]["entries"] = []
@@ -42,7 +45,7 @@ def process_log_file(file_name):
     try:
         with open(file_name, "r", encoding="utf-8") as file:
             for line in file:
-                for keyword in keywords:
+                for keyword in KEYWORDS:
                     if line.lower().find(keyword) != -1:
                         results["keywords"][keyword]["entries"].append(line)
                         results["keywords"][keyword]["entry_count"] += 1
@@ -68,24 +71,24 @@ def generate_report(results):
                         <keyword_2 (string)>: {...} ...}}
     '''
     try:
-        with open(report_file_path, "a", encoding="utf-8") as report_file:
+        with open(REPORT_FILE_PATH, "a", encoding="utf-8") as report_file:
             report_file.writelines(f"\n{results["line_count"]} lines of {results["file_name"]} scanned\n--- report ---\n")
             for keyword in results["keywords"]:
                 report_file.writelines(f"{results["keywords"][keyword]["entry_count"]} {keyword} entries found\n")
                 for entry in results["keywords"][keyword]["entries"]:
                     report_file.writelines(entry)
     except FileNotFoundError:
-        print(f"{report_file_path} does not exist at run location.")
+        print(f"{REPORT_FILE_PATH} does not exist at run location.")
     except PermissionError:
-        print(f"You don't have permission to access {report_file_path}.")
+        print(f"You don't have permission to access {REPORT_FILE_PATH}.")
     except OSError as e:
-        print(f"OS error occured while saving file {report_file_path}: {e}")
+        print(f"OS error occured while saving file {REPORT_FILE_PATH}: {e}")
     except UnicodeDecodeError:
         print("Failed to decode the file with UTF-8 encoding.")
     else:
-        print(f"File {results["file_name"]} successfully processed and results saved to {report_file_path}")
+        print(f"File {results["file_name"]} successfully processed and results saved to {REPORT_FILE_PATH}")
 
 os.chdir("./01_Beginner/module_2/excercise")
-create_new_file(report_file_path)
+create_new_file(REPORT_FILE_PATH)
 for file in glob.glob("*.txt"):
     generate_report(process_log_file(file))
