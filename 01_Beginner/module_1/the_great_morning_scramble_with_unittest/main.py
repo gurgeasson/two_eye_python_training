@@ -16,7 +16,7 @@ while True:
     else:
         print("You're still late, hurry up, you don't have much time left")
     
-    if search_location(int(input(assamble_question(locations_and_outcomes))), locations_and_outcomes):
+    if search_location(int(input(assemble_question(locations_and_outcomes))), locations_and_outcomes):
         print("Congrats, you found the key. you should be get to work on time today... though before you go out the door. Where are your pants?")
         break
 
