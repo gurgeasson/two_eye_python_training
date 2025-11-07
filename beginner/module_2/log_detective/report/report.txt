@@ -1,0 +1,20 @@
+
+0 lines of requirements.txt scanned
+--- report ---
+0 error entries found
+0 critical entries found
+
+0 lines of requirements.txt scanned
+--- report ---
+0 error entries found
+0 critical entries found
+
+0 lines of requirements.txt scanned
+--- report ---
+0 error entries found
+0 critical entries found
+
+0 lines of requirements.txt scanned
+--- report ---
+0 error entries found
+0 critical entries found
