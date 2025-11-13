@@ -1,6 +1,6 @@
 import unittest
-from scr.modules import *
-from data.locations import locations_and_outcomes
+from scr.modules import assemble_question, search_location
+from beginner.module_1.the_great_morning_scramble_with_unittest.data.data_store import locations_and_outcomes
 
 class TestFunctions(unittest.TestCase):
 
