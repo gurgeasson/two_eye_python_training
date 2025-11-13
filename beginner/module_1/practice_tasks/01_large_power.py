@@ -12,5 +12,6 @@ def large_power(base, exponent):
     else:
         return False
 
-print(large_power(2, 13))
-print(large_power(2, 12))
+if __name__ == "__main__":
+    print(large_power(2, 13))
+    print(large_power(2, 12))

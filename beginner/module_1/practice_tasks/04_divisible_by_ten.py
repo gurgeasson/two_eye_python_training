@@ -13,5 +13,6 @@ def divisible_by_ten(num):
     else:
         return False
     
-print(divisible_by_ten(20))
-print(divisible_by_ten(25))
+if __name__ == "__main__":    
+    print(divisible_by_ten(20))
+    print(divisible_by_ten(25))

@@ -18,8 +18,10 @@ def max_number(num1, num2, num3):
     else:
         return "It's a tie!"
     
-print(max_number(-10, 0, 10))
-print(max_number(-10, 5, -30))
-print(max_number(-5, -10, -10))
-print(max_number(2, 3, 3))
+    
+if __name__ == "__main__":    
+    print(max_number(-10, 0, 10))
+    print(max_number(-10, 5, -30))
+    print(max_number(-5, -10, -10))
+    print(max_number(2, 3, 3))
 

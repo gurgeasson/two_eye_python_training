@@ -11,6 +11,7 @@ def in_range(num, lower_bound, upper_bound):
         return True
     else:
         return False
-
-print(in_range(10, 10, 10)) # Expected outcome: True
-print(in_range(5, 10, 20))  # Expected outcome: False
+    
+if __name__ == "__main__":
+    print(in_range(10, 10, 10)) # Expected outcome: True
+    print(in_range(5, 10, 20))  # Expected outcome: False

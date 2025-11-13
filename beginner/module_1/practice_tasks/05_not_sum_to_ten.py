@@ -14,6 +14,7 @@ def not_sum_to_ten(num1, num2):
     else:
         return False
     
-print(not_sum_to_ten(9, -1))
-print(not_sum_to_ten(9, 1))
-print(not_sum_to_ten(5, 5))
+if __name__ == "__main__":    
+    print(not_sum_to_ten(9, -1))
+    print(not_sum_to_ten(9, 1))
+    print(not_sum_to_ten(5, 5))

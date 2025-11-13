@@ -11,6 +11,7 @@ def always_false(num):
       return True
   else:
       return False
-  
-print(always_false(0))
-print(always_false(10))
+
+if __name__ == "__main__":
+    print(always_false(0))
+    print(always_false(10))

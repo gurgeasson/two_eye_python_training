@@ -11,6 +11,7 @@ def same_name(name1, name2):
         return True
     else:
         return False
-
-print(same_name("Colby", "Colby"))
-print(same_name("Tina", "Amber"))
+    
+if __name__ == "__main__":
+    print(same_name("Colby", "Colby"))
+    print(same_name("Tina", "Amber"))
