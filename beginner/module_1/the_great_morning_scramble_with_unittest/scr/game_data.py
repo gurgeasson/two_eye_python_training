@@ -1,3 +1,5 @@
+from scr.custom_error import MyCustomError
+
 class Game_data:
     def __init__(self, location_dict):
         self.location_dict = location_dict
@@ -16,8 +18,8 @@ class Game_data:
                     help_text += f"{count}, "
                 elif count == number_of_locations:
                     help_text += f"or {count}: "
-            # else:
-            #     raise MyCustomError("formatting of locations.py is not correct!")
+            else:
+                raise MyCustomError("formatting of locations.py is not correct!")
         question += help_text
         return question
 
