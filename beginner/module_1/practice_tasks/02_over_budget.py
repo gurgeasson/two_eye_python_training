@@ -1,10 +1,12 @@
 '''
 Instructions
 
-    Define the function to accept five parameters starting with budget then food_bill, electricity_bill, internet_bill and rent.
-    Calculate the sum of the last four parameters.
-    Use if and else statements to test if the budget is less than the sum of the calculated sum from the previous step.
-    If the condition is true, return True, otherwise return False.
+    1) Define the function to accept five parameters starting with budget
+        then food_bill, electricity_bill, internet_bill and rent.
+    2) Calculate the sum of the last four parameters.
+    3) Use if and else statements to test if the budget is less than the sum
+        of the calculated sum from the previous step.
+    4) If the condition is true, return True, otherwise return False.
 '''
 
 def over_budget(budget, food_bill, electricity_bill, internet_bill, rent):

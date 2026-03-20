@@ -1,9 +1,10 @@
 '''
 Instructions
 
-    Define the function header to accept one input num.
-    Calculate the remainder of the input divided by 10 (use modulus).
-    Use an if statement to check if the remainder was 0. If the remainder was 0, return True, otherwise, return False.
+    1) Define the function header to accept one input num.
+    2) Calculate the remainder of the input divided by 10 (use modulus).
+    3) Use an if statement to check if the remainder was 0. If the remainder
+        was 0, return True, otherwise, return False.
 '''
 
 def divisible_by_ten(num):

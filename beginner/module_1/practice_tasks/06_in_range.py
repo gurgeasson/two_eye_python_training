@@ -1,9 +1,10 @@
 '''
 Instructions
 
-    Define the function to accept three numbers as parameters.
-    Test if the number is greater than or equal to the lower bound and less than or equal to the upper bound.
-    If this is true, return True, otherwise, return False.
+    1) Define the function to accept three numbers as parameters.
+    2) Test if the number is greater than or equal to the lower bound and less
+        than or equal to the upper bound.
+    3) If this is true, return True, otherwise, return False.
 '''
 
 def in_range(num, lower_bound, upper_bound):

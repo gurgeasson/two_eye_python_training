@@ -1,9 +1,13 @@
 '''
 Instructions
 
-    Define the function to accept a single parameter called num.
-    Use a combination of <, > and and to create a contradiction in an if statement.
-    If the condition is true, return True, otherwise return False. The trick here is that because we've written a contradiction, the condition should never be true, so we should expect to always return False.
+    1) Define the function to accept a single parameter called num.
+    2) Use a combination of <, > and and to create a contradiction
+        in an if statement.
+    3) If the condition is true, return True, otherwise return False.
+        The trick here is that because we've written a contradiction,
+        the condition should never be true, so we should expect to
+        always return False.
 '''
 
 def always_false(num):

@@ -1,10 +1,10 @@
 '''
 Instructions
 
-    Define the function to accept two parameters, num1 and num2.
-    Add the two parameters together.
-    Test if the result is not equal to 10.
-    If the sum is not equal, return True, otherwise, return False.
+    1) Define the function to accept two parameters, num1 and num2.
+    2) Add the two parameters together.
+    3) Test if the result is not equal to 10.
+    4) If the sum is not equal, return True, otherwise, return False.
 '''
 
 def not_sum_to_ten(num1, num2):

@@ -1,11 +1,16 @@
 '''
 Instructions
 
-    Define a function that has three input parameters, num1, num2, and num3.
-    Test if num1 is greater than the other two numbers. If so, return num1.
-    Test if num2 is greater than the other two numbers. If so, return num2.
-    Test if num3 is greater than the other two numbers. If so, return num3.
-    If there was a tie between the two largest numbers, then return "It's a tie!"
+    1) Define a function that has three input parameters,
+        num1, num2, and num3.
+    2) Test if num1 is greater than the other two numbers.
+        If so, return num1.
+    3) Test if num2 is greater than the other two numbers.
+        If so, return num2.
+    4) Test if num3 is greater than the other two numbers.
+        If so, return num3.
+    5) If there was a tie between the two largest numbers,
+        then return "It's a tie!"
 '''
 
 def max_number(num1, num2, num3):

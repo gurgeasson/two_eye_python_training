@@ -1,9 +1,9 @@
 '''
 Instructions
 
-    Define the function to accept two strings, your_name and my_name.
-    Test if the two strings are equal.
-    Return True if they are equal, otherwise return False.
+    1) Define the function to accept two strings, your_name and my_name.
+    2) Test if the two strings are equal.
+    3) Return True if they are equal, otherwise return False.
 '''
 
 def same_name(name1, name2):

@@ -1,13 +1,16 @@
 '''
 Instructions
 
-    Create an empty dictionary called students.
-    Define a function called add_student that takes two arguments: name & info. Using dictionary notation, assign name & info as the new key : value pair to the existing students dictionary and print a message to show student has been added.
-    Create dictionaries for individual students containing "grade" and "DOB".
-'''
+    1) Create an empty dictionary called students.
+    2) Define a function called add_student that takes two arguments:
+        name & info.
+    3) Using dictionary notation, assign name & info as the new key : value
+        pair to the existing students dictionary and print a message to show
+        student has been added.
+    4) Create dictionaries for individual students containing
+        "grade" and "DOB".
 
-'''
-pimp my script: to practice OOP I added classes
+After starting on the intermediate course, to practice OOP I added classes
 '''
 
 class Student:
@@ -26,12 +29,14 @@ class Exam:
         if len(self.student_dictionary) > 0:
             string = ""
             for i in self.student_dictionary:
-                string += (f"student first_name: {i}, student data: {self.student_dictionary[i]}\n")
+                string += (f"student first_name: {i}, \
+                           student data: {self.student_dictionary[i]}\n")
         return string
 
     def add_student(self, student, grade):
         self.student_dictionary[student.first_name] = {"grade": grade, "DOB": student.date_of_birth}
-        print(f"Student added with key:value pair as {student.first_name} : {self.student_dictionary[student.first_name]}")
+        print(f"Student added with key:value pair as {student.first_name} : \
+              {self.student_dictionary[student.first_name]}")
 
 if __name__ == "__main__":
     alex = Student("Alex", "10/10/1995")
