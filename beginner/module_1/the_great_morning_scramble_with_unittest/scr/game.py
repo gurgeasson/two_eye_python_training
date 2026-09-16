@@ -15,7 +15,7 @@ class Game:
                 print("You're still late, hurry up, you don't have much time left")
             
             if self.locations.search_location(int(input(self.locations.question))):
-                print("Congrats, you found the key. you should be on time to work today... though before you go out the door. Where are your pants?")
+                print("Congrats, you've found the key. you should be on time to work today... though before you go out the door. Where are your pants?")
                 break
 
             self.count += 1
